@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF20A72C-E62B-4FC0-96CA-756431C424A7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bonusproject</RootNamespace>
+    <AssemblyName>Bonusproject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BonusOkulDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BonusOkulDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BonusOkulDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BonusOkulDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDersler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDersler.Designer.cs">
+      <DependentUpon>FrmDersler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmkulupler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmkulupler.Designer.cs">
+      <DependentUpon>Frmkulupler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgrenciler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrenciler.Designer.cs">
+      <DependentUpon>FrmOgrenciler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgrenciNotlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrenciNotlar.Designer.cs">
+      <DependentUpon>FrmOgrenciNotlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgretmenler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgretmenler.Designer.cs">
+      <DependentUpon>FrmOgretmenler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSinavNotlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSinavNotlar.Designer.cs">
+      <DependentUpon>FrmSinavNotlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDersler.resx">
+      <DependentUpon>FrmDersler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmkulupler.resx">
+      <DependentUpon>Frmkulupler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrenciler.resx">
+      <DependentUpon>FrmOgrenciler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrenciNotlar.resx">
+      <DependentUpon>FrmOgrenciNotlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgretmenler.resx">
+      <DependentUpon>FrmOgretmenler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSinavNotlar.resx">
+      <DependentUpon>FrmSinavNotlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="BonusOkulDataSet.xsc">
+      <DependentUpon>BonusOkulDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BonusOkulDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BonusOkulDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BonusOkulDataSet.xss">
+      <DependentUpon>BonusOkulDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BonusOkulDataSet1.xsc">
+      <DependentUpon>BonusOkulDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BonusOkulDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BonusOkulDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BonusOkulDataSet1.xss">
+      <DependentUpon>BonusOkulDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\810_student.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\öğretmen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student-icon-21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4696723.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4696727.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lesson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lesson1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-course-computer-class-test-homework-study-computer-network-angle-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-and-pencil-icon-11550253271gg6jwxsvlp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-textbook-icon-textbook-angle-text-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-textbook-school-tutor-school-text-curriculum-share-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-811961616-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-textbook-book-angle-reading-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4621327-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\öğretmen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-page-option.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparency.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\studio-calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
